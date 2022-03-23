@@ -5,3 +5,29 @@
 // * Pensate prima in italiano.
 // * Dividete in piccoli problemi la consegna.
 // * Individuate gli elementi di cui avete bisogno per realizzare il programma.
+
+let numeriCasuali = [];
+
+    for (let i = 0; i < 5; i++) {
+
+        numeriCasuali.push(Math.floor(Math.random()*100) + 1);
+
+    }
+
+console.log(numeriCasuali);
+
+setTimeout(trentaTimer, 3000);
+
+let numeriInseriti = [];
+
+function trentaTimer() {
+
+    for (let x = 0; x < 5; x++) {
+
+        numeriInseriti.push(prompt("Inserisci uno dei 5 numeri visti in precedenza"));
+        console.log(numeriInseriti);
+
+    }    
+    
+}
+
